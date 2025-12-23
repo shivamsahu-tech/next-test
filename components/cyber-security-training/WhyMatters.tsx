@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 
-export default function Benefits() {
+export default function WhyMatters() {
 
     const benefits = [
         {
@@ -27,30 +27,28 @@ export default function Benefits() {
             
                 <div className="w-full flex flex-col gap-4 items-center mb-4 md:mb-12">
                     <h1 className="text-3xl md:text-[40px] font-semibold leading-tight text-center">
-                        Benefits
+                        Why Security Training Matters
                     </h1>
                     <p className="text-gray-400 text-sm lg:text-base font-light leading-relaxed text-center max-w-2xl">
-                        Inxtinct One goes beyond basic password management to provide complete peace of mind for your digital life.
+                        Your team encounters real risks every day. We help them recognise threats early and build everyday habits that strengthen overall security.
                     </p>
                 </div>
 
-                <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 md:pb-0 md:grid md:grid-cols-3 md:gap-8 :overflow-visible no-scrollbar">
+                <div className="relative bg-linear-to-br flex-1 from-[#1a0f2e]/60 to-[#0f0820]/60 
+                              backdrop-blur-xl
+                              border border-purple-500/30
+                              rounded-3xl p-8 md:p-10
+                              shadow-[0_0_60px_rgba(147,51,234,0.15)]">
+
+
                     {benefits.map((benefit, index) => (
                         <div 
                             key={index} 
                             className="relative rounded-2xl overflow-hidden shrink-0 w-[80vw] md:w-auto md:min-w-0 snap-center group"
                         >
-                            <div className="w-full bg-gray-800">
-                                <Image 
-                                    src={benefit.image} 
-                                    alt={benefit.title} 
-                                    width={500} 
-                                    height={500} 
-                                    className="w-full h-auto object-cover" 
-                                />
-                            </div>
+                           
 
-                            <div className="bg-[linear-gradient(0deg,#460682_0%,#2F054B_100%)] p-5 lg:px-8 md:pt-10 md:pb-6 md:px-6 h-full">
+                            <div className="bg-[linear-gradient(0deg,#460682_0%,#2F054B_100%)] lg:px-8 md:pt-10 md:pb-6 md:px-6 h-full">
                                 <h1 className="text-2xl md:text-3xl mb-4 font-medium">
                                     {benefit.title}
                                 </h1>

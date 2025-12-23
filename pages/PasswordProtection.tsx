@@ -9,27 +9,21 @@ import Footer from "@/components/Footer";
 
 export default function PasswordProtectionPage() {
     return (
-        <div className=" bg-[#0D0A11]" >
+        <div className="relative min-h-screen">
             
+            <div className="fixed inset-0 -z-10 bg-[#0D0A11] md:bg-linear-to-t md:h-[85vh] md:from-[#360670] md:via-[#0D0A11] md:to-[#0D0A11]" />
+
             <Header/>
 
             <Intro/>
-            <div className="w-[85%] mx-auto" >
-
-                <HowItWorks/>
-
-                <Benefits/>
-
-                <WhyUs/>
-
-                <KeyFeatures/>
-
-                <TrustedUsers/>
-
-            </div>
+            
+            <HowItWorks/>
+            <Benefits/>
+            <WhyUs/>
+            <KeyFeatures/>
+            <TrustedUsers/>
 
             <Footer/>
-
 
         </div>
     )

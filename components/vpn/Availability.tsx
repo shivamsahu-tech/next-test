@@ -1,6 +1,6 @@
 export default function Availability() {
     return (
-     <div className="relative w-[80%] rounded-lg overflow-hidden mx-auto mt-56 mb-30">
+     <div className="relative rounded-lg overflow-hidden px-6 lg:px-30 mt-36 mb-30">
     <div className="relative grid-background grid-fade 
                     bg-[radial-gradient(circle_at_center,#0A011C_0%,#1a0d2e_50%,#360670_100%)] 
                     px-8 py-20 min-h-[628px] flex flex-col items-center justify-center">
@@ -23,9 +23,9 @@ export default function Availability() {
                 We're proud to protect individuals and businesses around the world with our powerful, easy-to-use security solutions.
             </p>
             
-            <button className="bg-[#481381] hover:bg-[#481381]/80 text-white font-medium px-30 py-4 rounded-full hover:cursor-pointer transition-all">
-                Contact Us
-            </button>
+                <button className="bg-[#481381] hover:bg-[#481381]/80 text-white font-medium px-30 py-4 rounded-full hover:cursor-pointer transition-all">
+                    Contact Us
+                </button>
         </div>
     </div>
 </div>  

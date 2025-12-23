@@ -10,27 +10,27 @@ import Image from "next/image";
 
 export default function DataSecurity() {
     return (
-        <div className=" bg-[#0b0318]" >
-            <Header/>
-            <Intro/>
+        <div className=" bg-[#0b0318] w-screen " >
+            <Header />
+            <Intro />
 
-            <YourData/>
+            <YourData />
 
-            <DarkWeb/>
+            <DarkWeb />
 
-            <Guard/>
+            <Guard />
 
             <div className="w-full flex items-center justify-center py-50">
-                <div className="w-[60%]">    
-                     <Image src="/data-protection/all-rounded.png" alt="all-rounded"  height={500} width={500} className="w-full" />
+                <div className="w-[60%]">
+                    <Image src="/data-protection/all-rounded.png" alt="all-rounded" height={500} width={500} className="w-full" />
                 </div>
             </div>
 
-            <DataLeak/>
+            <DataLeak />
 
-            <ConnectUs/>
+            <ConnectUs />
 
-            <Footer/>   
+            <Footer />
 
 
         </div>
